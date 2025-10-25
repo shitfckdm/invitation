@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>invitation</title>
+
+  <!-- Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600;700&family=Great+Vibes&display=swap" rel="stylesheet">
+
+  <!-- AOS (Animate On Scroll) -->
+  <link href="https://unpkg.com/aos@2.3.4/dist/aos.css" rel="stylesheet" />
+
+  <!-- Font Awesome -->
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" rel="stylesheet"/>
+
+  <!-- Custom CSS -->
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+
+<body class="no-scroll">
+
+  <!-- HERO SECTION -->
+  <section id="hero" class="fade-in">
+    <div class="overlay">
+      <p class="small-text" data-aos="fade-down">UNDANGAN</p>
+      <h1 data-aos="zoom-in">Muhammad Salimuddin</h1>
+      <p class="date" data-aos="fade-up">Sabtu, 1–2 November 2025</p>
+      <button id="openBtn" data-aos="fade-up" data-aos-delay="400">Buka Undangan</button>
+    </div>
+  </section>
+
+  <!-- MAIN INVITATION -->
+  <main id="invitation" class="hidden">
+
+    <!-- INTRO -->
+    <section class="intro" data-aos="fade-up">
+      <div class="photo" data-aos="zoom-in-right">
+        <img src="img/braga5.jpg" alt="Couple Photo" />
+      </div>
+
+      <div class="text" data-aos="zoom-in-left">
+        <h2 class="arabic-text" data-aos="fade-in" style="color: black;">بِسْمِ ٱللَّٰهِ ٱلرَّحْمَٰنِ ٱلرَّحِيمِ</h2>
+        <h3 class="quote-title" data-aos="fade-in">ثُمَّ أَوْحَيْنَا إِلَيْكَ أَنِ اتَّبِعْ مِلَّةَ إِبْرَاهِيمَ حَنِيفًا ۖ وَمَا كَانَ مِنَ الْمُشْرِكِينَ</h3>
+
+        <p class="quote" data-aos="fade-up">
+          Artinya: "Kemudian Kami wahyukan kepadamu (Muhammad): 'Ikutilah agama Ibrahim, seorang yang hanif (lurus).
+          Dan bukanlah dia termasuk orang-orang yang mempersekutukan Tuhan.'" <br>(QS. An-Nahl: 123)
+        </p>
+
+        <div class="countdown" data-aos="zoom-in">
+          <div><span id="days">00</span><small>Hari</small></div>
+          <div><span id="hours">00</span><small>Jam</small></div>
+          <div><span id="minutes">00</span><small>Menit</small></div>
+          <div><span id="seconds">00</span><small>Detik</small></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- PROFILE BRIDE -->
+    <section class="profile" data-aos="zoom-in-up">
+      <div class="details" data-aos="fade-left">
+        <div class="invitation-text" data-aos="zoom-in" data-aos-delay="200">
+          <h3 class="hero-name">Tasyakuran Khitanan</h3>
+          <h4 class="name">Assalamu'alaikum wa rahmatullahi wa barakatuh</h4>
+
+          <p>Dengan penuh rasa syukur kehadirat Allah SWT, kami bermaksud mengundang
+            Bapak/Ibu/Saudara/i untuk hadir dalam acara khitanan putra kami:</p>
+
+          <h3 class="hero-name">Muhammad Salimuddin</h3>
+
+          <p>
+            Putra dari:<br>
+            Ibu Riana Trisnawati (Riri) & Bapak Ana Wijana Muhamad (Ijan)
+          </p>
+
+          <p>
+            Yang akan dilaksanakan pada:<br>
+            Sabtu, 1–2 November 2025<br>
+            Pukul 10.00 WIB s/d selesai
+          </p>
+
+          <p>
+            Atas kehadiran dan doa restunya kami ucapkan terima kasih yang sebesar-besarnya.
+          </p>
+
+          <p>
+            Hormat kami,<br>
+            Keluarga besar Ibu Riana Trisnawati & Bapak Ana Wijana Muhamad<br>
+            Bapak Cardi Gunawan & Ibu Aan Susilawati
+          </p>
+        </div>
+      </div>
+
+      <div class="photo" data-aos="zoom-in-right">
+        <img src="img/pp.jpg" alt="Bride" />
+      </div>
+    </section>
+
+    <!-- GALLERY -->
+    <section class="profilescroll" data-aos="fade-up">
+      <div class="photo" data-aos="zoom-in"><img src="img/kecil1.jpg" alt="Groom" /></div>
+      <div class="photo" data-aos="zoom-in"><img src="img/kecil2.jpg" alt="Groom" /></div>
+      <div class="photo" data-aos="zoom-in"><img src="img/braga1.jpg" alt="Groom" /></div>
+      <div class="photo" data-aos="zoom-in"><img src="img/braga88.jpg" alt="Groom" /></div>
+      <div class="photo" data-aos="zoom-in"><img src="img/braga77.jpg" alt="Groom" /></div>
+    </section>
+
+    <!-- MAP -->
+    <section class="map-section" data-aos="fade-up">
+      <img src="img/bgrumah.jpg" alt="Peta Lokasi" class="map-box" />
+      <div class="event-info" data-aos="fade-up">
+        <h3>1–2 NOVEMBER 2025</h3>
+        <p>10:00 s/d Selesai</p>
+        <h3>BOJONGKUNCI</h3>
+        <p>KP SUKAMAJU, RT/RW 04/07 NO 22</p>
+        <a href="https://maps.app.goo.gl/VQPPfP9NM4GyaVyv6" target="_blank" class="btn-location" data-aos="zoom-in">Lihat Lokasi</a>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- MUSIC -->
+  <div id="music-icon" class="music-icon" data-aos="fade-in">🎵</div>
+  <audio id="lagu" autoplay loop>
+    <source src="zanz-music-.mp3" type="audio/mpeg">
+    Browser kamu tidak mendukung audio.
+  </audio>
+
+  <!-- JS -->
+  <script src="https://unpkg.com/aos@2.3.4/dist/aos.js"></script>
+  <script src="js/script.js"></script>
+</body>
+</html>

@@ -1,0 +1,662 @@
+/* === BASE === */
+body {
+  margin: 0;
+  font-family: 'Playfair Display', serif;
+  background: #f2e8df99;
+  color: #000000;
+  scroll-behavior: smooth;
+}
+
+body.no-scroll {
+  overflow: hidden !important;
+}
+
+/* === HERO SECTION === */
+#hero {
+  position: relative;
+  height: 100vh;
+  background-image: url('sakura.jpg');
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+  color: rgb(23, 21, 21);
+  text-align: center;
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-attachment: fixed; /* atau scroll */
+
+}
+
+#hero .overlay {
+  background: rgba(198, 136, 136, 0.45);
+  position: absolute;
+  inset: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.overlay h1 {
+  font-family: 'Great Vibes', cursive;
+  font-size: 65px;
+  color: #131313;
+  letter-spacing: 2px;
+  text-shadow: 2px 2px 8px rgba(14, 14, 14, 0.25);
+  margin: 10px 0;
+}
+
+.overlay .date {
+  font-size: 16px;
+  letter-spacing: 4px;
+}
+
+#openBtn {
+  margin-top: 20px;
+  border: none;
+  padding: 12px 28px;
+  font-size: 17px;
+  cursor: pointer;
+  border-radius: 10px;
+  color: rgb(12, 12, 12);
+  transition: 0.5s;
+}
+
+#openBtn:hover {
+  background: #181617;
+  transform: scale(1.05);
+}
+
+/* === BACKGROUND GLOBAL === */
+body {
+  background: url("../sakura.jpg") no-repeat center center fixed;
+  background-size: cover;
+  background-color: #100f0f;
+}
+
+/* === INTRO SECTION === */
+.intro {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 50px;
+  padding: 100px 10%;
+  flex-wrap: wrap;
+}
+
+.small-text {
+  font-size: 16px;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  color: #4a3f3f;
+  font-weight: bold; /* ✅ tambahkan ini */
+}
+
+
+.intro .text {
+  flex: 1;
+  text-align: right;
+  color: #121112;
+}
+
+.intro .quote-title,
+.intro .quote {
+  color: #0e0c0a;
+}
+
+.intro .photo img {
+  width: 100%;
+  max-width: 420px;
+  height: auto;
+  object-fit: cover;
+  border-radius: 20px;
+  border: 6px solid rgba(226, 161, 161, 0.6); /* transparan */
+  box-shadow: 0 8px 20px rgba(243, 237, 237, 0.15);
+  transition: transform 0.4s ease, box-shadow 0.4s ease;
+  background-color: rgba(255, 255, 255, 0.2); /* lapisan lembut di belakang foto */
+  backdrop-filter: blur(6px); /* efek kaca halus */
+}
+
+.intro .photo img:hover {
+  transform: scale(1.05);
+  box-shadow: 0 10px 25px rgba(235, 132, 175, 0.25);
+}
+
+/* === COUNTDOWN === */
+.countdown {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: nowrap;
+  gap: 25px;
+  margin-top: 40px;
+  text-align: center;
+}
+
+.countdown div {
+  flex: 0 0 100px;
+  border: 1px solid rgba(255, 255, 255, 0.4);
+  padding: 25px 20px;
+  border-radius: 10px;
+  background: #e2a1a1;
+  backdrop-filter: blur(8px);
+  transition: all 0.3s ease;
+  box-sizing: border-box;
+}
+
+.countdown div:hover {
+  transform: scale(1.05);
+}
+
+.countdown span {
+  display: block;
+  font-size: 38px;
+  font-weight: 600;
+  color: #171616;
+}
+
+.countdown small {
+  display: block;
+  font-size: 13px;
+  margin-top: 6px;
+  color: #171616;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+}
+
+/* === PROFILE === */
+.profile {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  gap: 60px;
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 80px 40px;
+}
+
+.profile .photo img {
+  width: 300px;
+  height: 300px;
+  object-fit: cover;
+  border-radius: 50%;
+  border: 6px solid #e2a1a1;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.15);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.profile .photo img:hover {
+  transform: scale(1.08);
+  box-shadow: 0 6px 20px rgba(245, 236, 236, 0.25);
+}
+
+.profile .details {
+  flex: 1;
+  text-align: left;
+  color: #141313;
+}
+
+/* === INVITATION TEXT === */
+.invitation-text {
+  text-align: center;
+  line-height: 1.8;
+  color: #151414;
+  font-size: 1.1rem;
+  margin-top: 15px;
+}
+
+.invitation-text h3 {
+  font-family: 'Great Vibes', cursive;
+  font-size: 40px;
+  text-align: center;
+  color: #2c2c2c;
+  margin: 20px 0;
+}
+
+/* === GALLERY / SCROLL FOTO === */
+.profilescroll {
+  display: flex;
+  overflow-x: auto;
+  scroll-behavior: smooth;
+  gap: 30px;
+  padding: 40px 20px;
+  justify-content: flex-start;
+  cursor: grab;
+}
+
+.profilescroll::-webkit-scrollbar {
+  display: none;
+}
+
+.profilescroll .photo img {
+  width: 240px;
+  height: 240px;
+  object-fit: cover;
+  border-radius: 50%;
+  border: 6px solid #e2a1a1;
+  box-shadow: 0 4px 15px rgba(248, 246, 246, 0.25);
+  flex-shrink: 0;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.profilescroll .photo img:hover {
+  transform: scale(1.08);
+}
+
+/* === MAP SECTION === */
+.map-section {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  gap: 3rem;
+  margin-top: 3rem;
+  margin-left: 10%;
+  flex-wrap: wrap;
+  text-align: center;
+}
+
+/* ==== FONT UNTUK EVENT INFO ==== */
+.event-info,
+.bagbwh {
+  font-family: "Times New Roman", Times, serif;
+  font-size: 1.1rem;
+  color: #14100f;
+  text-align: center;
+  line-height: 1.6;
+}
+
+/* ==== MAP BOX ==== */
+.map-box {
+  width: 250px;
+  height: 250px;
+  border-radius: 50%;
+  border: 6px solid #e2a1a1;
+  object-fit: cover;
+  box-shadow: 0 8px 25px rgba(20, 20, 20, 0.25);
+  cursor: pointer;
+  transition: transform 0.4s ease, box-shadow 0.4s ease;
+}
+
+/* === MUSIC ICON === */
+.music-icon {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  font-size: 26px;
+  background: #ece3e3;
+  color: rgb(26, 25, 25);
+  padding: 12px;
+  border-radius: 50%;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.music-icon:hover {
+  transform: scale(1.1);
+}
+
+/* === TOMBOL UMUM (Buka Undangan & Lihat Lokasi) === */
+.btn-location,
+#openBtn {
+  display: inline-block;
+  padding: 12px 28px;
+  background-color: #e2a1a1;
+  color: rgb(9, 8, 8);
+  font-weight: 600;
+  border: none;
+  border-radius: 30px;
+  text-decoration: none;
+  transition: all 0.5s ease;
+  box-shadow: 0 4px 12px rgba(197, 124, 124, 0.15);
+  font-size: 17px;
+}
+
+/* Hover effect */
+.btn-location:hover,
+#openBtn:hover {
+  background-color: #e2a1a1;
+  transform: scale(1.05);
+  box-shadow: 0 6px 16px rgba(191, 117, 117, 0.99);
+}
+
+/* Klik (aktif) */
+.btn-location:active,
+#openBtn:active {
+  transform: scale(0.97);
+}
+
+/* Animasi muncul */
+.btn-location {
+  opacity: 0;
+  transform: translateY(15px);
+  animation: fadeUp 1s ease forwards 1s;
+}
+
+@keyframes fadeUp {
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* === ANIMATIONS === */
+.fade-in {
+  animation: fadeIn 2s ease-in-out;
+}
+
+.fade-out {
+  animation: fadeOut 1s ease-in-out forwards;
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; transform: scale(1.05); }
+  to { opacity: 1; transform: scale(1); }
+}
+
+@keyframes fadeOut {
+  from { opacity: 1; }
+  to { opacity: 0; visibility: hidden; }
+}
+
+/* === RESPONSIVE FIXES === */
+@media (max-width: 900px) {
+
+  /* Intro */
+  .intro {
+    flex-direction: column;
+    text-align: center;
+    padding: 60px 20px;
+  }
+
+  .intro .text {
+    text-align: center;
+  }
+
+  .intro .photo img {
+    width: 85%;
+    height: auto;
+    border-radius: 20px;
+  }
+
+  /* Profile */
+  .profile {
+    flex-direction: column-reverse;
+    align-items: center;
+    text-align: center;
+    padding: 40px 20px;
+  }
+
+  .profile .photo img {
+    width: 220px;
+    height: 220px;
+  }
+
+  /* Gallery */
+  .profilescroll {
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+  }
+
+  /* Map */
+  .map-section {
+    flex-direction: column;
+    align-items: center;
+    margin-left: 0;
+    text-align: center;
+  }
+
+  .map-box {
+    width: 200px;
+    height: 200px;
+  }
+
+  /* Countdown responsive */
+  .countdown {
+    flex-wrap: wrap;
+    gap: 15px;
+  }
+
+  .countdown div {
+    flex: 1 1 45%;
+    max-width: 120px;
+    padding: 15px;
+  }
+
+  /* Teks undangan */
+  .invitation-text {
+    font-size: 1rem;
+    margin: 10px;
+    line-height: 1.6;
+  }
+}
+/* === ARABIC TEXT STYLE === */
+.arabic-text {
+  font-family: 'Scheherazade', serif;
+  font-size: 42px; /* ukuran besar */
+  line-height: 1.6;
+  color: #d47aa2; /* pink lembut */
+  text-align: center;
+  margin-bottom: 10px;
+  text-shadow: 0 4px 12px rgba(255, 182, 193, 0.5);
+opacity:0.8;/*buat foto agak pudar*/
+}
+/* untuk ayat Arab di bawahnya */
+.quote-title {
+  font-family: 'Scheherazade', serif;
+  font-size: 32px;
+  line-height: 1.6;
+  color: #c15f8a;
+  text-align: center;
+  margin-top: 10px;
+  text-shadow: 0 3px 10px rgba(255, 192, 203, 0.4);
+}
+
+html, body {
+  height: 100%;
+  overflow-x: hidden;
+}
+
+#hero {
+  height:100vh;
+  overflow: hidden;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+}
+
+.hidden {
+  display: none !important;
+}
+
+/* === CINEMATIC ANIMATION === */
+[data-aos="zoom-in"] {
+  transform: scale(0.9);
+  opacity: 0;
+  transition: all 1.2s ease;
+}
+[data-aos="zoom-in"].aos-animate {
+  transform: scale(1);
+  opacity: 1;
+}
+
+[data-aos="fade-in"] {
+  opacity: 0;
+  transition: opacity 1.2s ease;
+}
+[data-aos="fade-in"].aos-animate {
+  opacity: 1;
+}
+
+/* === ARABIC TEXT GLOW === */
+.arabic-text, .quote-title {
+  color: #c45d7e;
+  text-shadow: 0 0 12px rgba(255, 182, 193, 0.8), 0 0 30px rgba(255, 200, 220, 0.6);
+  animation: glowFade 3s ease-in-out infinite alternate;
+}
+
+@keyframes glowFade {
+  from { text-shadow: 0 0 8px rgba(255, 182, 193, 0.4); opacity: 0.9; }
+  to { text-shadow: 0 0 22px rgba(255, 200, 220, 0.9); opacity: 1; }
+}
+
+/* Efek Cinematic */
+.fade-out-cinematic {
+  animation: fadeOutZoom 1.2s ease forwards;
+}
+
+.fade-in-cinematic {
+  animation: fadeInRise 1.5s ease forwards;
+}
+
+/* Hero Text Animasi Masuk */
+.hero-text {
+  animation: textAppear 1.8s ease forwards;
+}
+
+/* Animasi saat buka undangan */
+@keyframes fadeOutZoom {
+  0% {
+    opacity: 1;
+    transform: scale(1);
+  }
+  100% {
+    opacity: 0;
+    transform: scale(1.1);
+  }
+}
+
+@keyframes fadeInRise {
+  0% {
+    opacity: 0;
+    transform: translateY(40px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes textAppear {
+  0% {
+    opacity: 0;
+    letter-spacing: 8px;
+    transform: translateY(20px);
+  }
+  100% {
+    opacity: 1;
+    letter-spacing: 1px;
+    transform: translateY(0);
+  }
+}
+
+/* Tombol Buka Undangan Pulse */
+#openBtn {
+  animation: pulseBtn 2.5s infinite;
+}
+
+@keyframes pulseBtn {
+  0% {
+    transform: scale(1);
+    box-shadow: 0 0 0 0 rgba(255, 255, 255, 0.7);
+  }
+  70% {
+    transform: scale(1.05);
+    box-shadow: 0 0 25px 10px rgba(255, 255, 255, 0);
+  }
+  100% {
+    transform: scale(1);
+    box-shadow: 0 0 0 0 rgba(255, 255, 255, 0);
+  }
+}
+
+/* Animasi parallax lembut saat scroll */
+section {
+  transition: transform 0.3s ease, opacity 0.3s ease;
+  will-change: transform, opacity;
+}
+
+section[data-aos="fade-up"] {
+  transform: translateY(40px);
+  opacity: 0;
+}
+
+section.aos-animate[data-aos="fade-up"] {
+  transform: translateY(0);
+  opacity: 1;
+}
+
+/* Parallax effect pada gambar */
+.photo img {
+  width: 100%;
+  height: auto;
+  transform: translateY(0);
+  transition: transform 0.4s ease-out;
+  will-change: transform;
+}
+
+/* Untuk memastikan container tidak terpengaruh layout */
+.photo {
+  overflow: hidden;
+  position: relative;
+}
+
+/* Parallax lembut saat scroll */
+.parallax-active {
+  transform: translateY(-20px);
+}
+
+/* ANIMASI FOTO SAMA DENGAN TOMBOL BUKA UNDANGAN */
+@keyframes fadeZoom {
+  0% {
+    opacity: 0;
+    transform: scale(0.9);
+  }
+  60% {
+    opacity: 1;
+    transform: scale(1.05);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+
+/* Terapkan animasi ke foto di section invitation */
+.photo img {
+  animation: fadeZoom 1.5s ease-out both;
+}
+
+/* Efek gerakan lembut berulang pada foto */
+@keyframes gentleMove {
+  0% {
+    transform: scale(1) translateY(0);
+  }
+  50% {
+    transform: scale(1.03) translateY(-5px);
+  }
+  100% {
+    transform: scale(1) translateY(0);
+  }
+}
+
+/* Terapkan ke gambar dalam section .photo */
+.photo img {
+  animation: gentleMove 4s ease-in-out infinite;
+  transform-origin: center center;
+  border-radius: inherit; /* supaya tetap rapi di border pink */
+  transition: all 0.5s ease-in-out;
+  overflow: hidden; /* agar foto tetap di dalam lingkaran */
+  box-shadow: none !important; /* matikan bayangan hitam */
+}
+
+.photo img {
+  animation: gentleMove 4s ease-in-out infinite;
+  transform-origin: center center;
+  border-radius: inherit;
+  transition: all 0.5s ease-in-out;
+  backface-visibility: hidden; /* mencegah efek gelap */
+  will-change: transform; /* optimasi animasi */
+}
