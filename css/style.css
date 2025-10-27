@@ -660,3 +660,7 @@ section.aos-animate[data-aos="fade-up"] {
   backface-visibility: hidden; /* mencegah efek gelap */
   will-change: transform; /* optimasi animasi */
 }
+
+* {
+  color:#000000 !important;
+}
